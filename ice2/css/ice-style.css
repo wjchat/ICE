@@ -1,0 +1,125 @@
+table{
+	margin:1em auto;
+	font-size: 150%;
+}
+
+caption::first-letter{
+	font-family: Cursive;
+	color: #FF0000;
+}
+
+caption{
+	font-size: 32px;
+	color: #808080;
+}
+
+th {
+	background: #CCCCCC;
+}
+
+header > h1{
+	background-color: yellow;
+	padding: 0rem;
+	margin:0;
+	margin-bottom: 0px;
+	text-align: right;
+
+}
+
+body{
+	margin:0;
+	background-color: green;
+	padding-bottom: 0;
+}
+
+nav > ul > li {
+	display: inline-block;
+	background-color: black;
+	width:12rem;
+	padding:1rem;
+	
+}
+
+nav > ul {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: green;
+	padding-bottom: 0;
+}
+
+nav > ul > li > a {
+	color:white;
+	text-decoration: none;
+}
+
+#content{
+	background-color:gray;
+	width: 70rem;
+	padding-top: 0;
+	margin-top: 0;
+
+}
+
+#content > ul{
+	list-style-type: none;
+	text-align: center;
+	padding-bottom: 4.35rem;
+}
+
+#content > h1{
+	padding-top: 0;
+	margin-top: 0;
+}
+
+
+aside{
+	
+	text-align: left;
+	position: absolute;
+	background-color: white;
+	margin-left: 70rem;
+	width: 10rem;
+	background-image: url("http://www.literarygenius.info/images/william-shakespeare.jpg") ;
+	height:27rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+	margin-bottom: 0;
+}
+
+
+
+
+
+
+thead th:first-child { /* selects the first th inside of the thead */
+	border-top-left-radius: 5px; /* we need to apply the rounding to the th because the tr doesn't support this property */
+}
+
+thead th:last-child { /* selects the last th inside of the thead */
+	border-top-right-radius: 5px;
+}
+
+tfoot th:first-child { /* selects the first th inside of the tfoot */
+	border-bottom-left-radius: 5px;
+}
+
+tfoot td:last-child { /* selects the last td inside of the tfoot */
+	border-bottom-right-radius: 5px;
+	background: #FF66FF;
+	font-size: 140%;
+	height: 2em;
+}
+
+tbody tr:nth-child(odd) { /* select the odd-numbered rows */
+	background: #FCFFF5;
+}
+tbody tr:nth-child(even) { /* selects the even-numbered rows */
+	background: #D1DBBD;
+}
+tbody tr:hover { /* changes styles of the row when hovered */
+	background: #3E606F;
+	color: #FFF;
+	font-style: italic;
+}
