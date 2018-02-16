@@ -1,0 +1,41 @@
+
+.wrapper {
+  display: grid;
+ grid-template-columns: 1fr 1fr 1fr;  
+  grid-template-rows: 1fr 4fr 1fr;
+
+  background-color: #fff;
+  color: #444;
+  
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+/*   border: 3px; */
+}
+
+.a {
+    background-color: green;
+    grid-column:1/4;
+}
+
+.b{
+    background-color: yellow;
+    grid-column:3;
+
+}
+
+.c{
+    background-color: red;
+    grid-column:3/1;
+    grid-row: 2;
+}
+
+.d{
+    background-color: green;
+    grid-column: 1/4;
+}
