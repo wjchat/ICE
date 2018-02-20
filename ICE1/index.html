@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lan ='eng'>
+
 
 
 <head>
@@ -14,9 +14,9 @@
 	<header>
 		<nav>
 			<span>
-				<a>Tommy</a>
-				<a>Abbey</a>
-				<a>Ethan</a>
+				<a href = 'https://tomkidd22.github.io/ICE1/ICE1.html'>Tommy</a>
+				<a href="https://abbeymw.github.io/ICE1-HTML/index.html">Abbey</a>
+				<a href="http://www.ethanjannott.com/SI339/ICE1-HTML/ICE1.html">Ethan</a>
 			</span>
 		</nav>
 		<h1>Will</h1>
@@ -25,9 +25,9 @@
 	<table>
 
 		<tr>
-			<td><img src ="img/camel.PNG" height = '200px' width = '100px'></td>
-			<td><img src='https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/1318/CMS/Petoskey_Stones/download.jpg'></td>
-			<td><img src='img/sketch.jpg' height = '200px' width = '500px'></td>
+			<td><img src ="img/camel.PNG" height = '200px' width = '100px' alt = "its a camel"></td>
+			<td><img src='https://chambermaster.blob.core.windows.net/userfiles/UserFiles/chambers/1318/CMS/Petoskey_Stones/download.jpg' alt = "its petoskey"></td>
+			<td><img src='img/sketch.jpg' height = '200px' width = '500px' alt = "its a picture of my sketch"></td>
 		</tr>
 
 		<tr>
@@ -40,27 +40,26 @@
 		<tr>
 			<td colspan ='3'></td>
 		</tr>
+	</table>
 
+		<div>
+			<form>
+				Name:
+				<input type="text" name="name" id = "name"><br>
+				<label for="dob">DOB:</label>
+				<input type="date" name="DOB" id = "dob"><br>
 
-		<form><p>What is your favorite food?</p>
+				Please enter your choice of snack:<br>
+				<input type="radio" name="snack" value="pizza"> Pizza<br>
+		  		<input type="radio" name="snack" value="donut"> Donut<br>
+		  		<input type="radio" name="snack" value="vegan"> Vegan Stuff<br>
 
-			<p>Pizza
-				<input type="radio" name="food" id="pizza">
-			</p>
-
-			<p>Tacos
-			<input type="radio" name="food" value = "tacos">
-			</p>
-			
-			<p>Chicken
-			<input type="radio" name="food" id="chicken">
-			</p>
-
-			<p>Cornbread
-			<input type="radio" name="food" id="cornbread">
-			</p>
-
-		</form>
+		  		Please enter your choice of drink:<br>
+				<input type="radio" name="drink" value="coffee"> Coffee<br>
+		  		<input type="radio" name="drink" value="tea"> Tea<br>
+		  		<input type="radio" name="drink" value="water"> Water<br>
+			</form>
+		</div>
 
 
 		
