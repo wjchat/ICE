@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now-alt" type="text/css"/>
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/hk-grotesk" type="text/css"/>
+</head>
+
+<!-- jquery set up -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<body>
+
+	<nav>
+		
+		<div class = 'head'>
+			<h1><a href="index.html">Home</a></h1>
+		</div>
+		
+		<div class = 'head'> 
+			<h1>Artists</h1>
+			<ul>
+				<li><a href="">Michie Nimsombun</a></li>
+				<li><a href="">Ben Swanson-Ralph</a></li>
+			</ul>
+		</div>
+		
+		
+	</nav>
+
+	<div class = 'main'>
+
+		<div class = 'flex-container'>
+			
+			<img src="pics/index/camel.png" alt="camel">
+			<h2 class = 'name'>Michie</h2>
+			<h2><a href="">Gallery</a></h2>
+			<h2><a href="">About</a></h2>
+
+		</div>
+
+		<div class = 'flex-container'>
+			
+			<img src="pics/index/camel.png" alt="camel">
+			<h2 class = 'name'>Ben</h2>
+			<h2><a href="">Gallery</a></h2>
+			<h2><a href="">About</a></h2>
+
+		</div>
+		
+
+	</div>
+	
+</body>
+
+<script = 'text/javascript'>
+
+(function($){
+
+	var tab = $('.head');
+
+	tab.on('mouseenter', function(){
+
+		// console.log('sdad');
+
+		$(this).find('ul').slideToggle(200);
+	})
+
+	tab.on('mouseleave', function(){
+
+		// console.log('sdad');
+
+		$(this).find('ul').slideToggle(200);
+	})
+
+
+
+
+}(jQuery));
+
+</script>
+</html>
