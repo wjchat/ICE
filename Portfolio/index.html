@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
+	<link rel="stylesheet" href="css/default.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now-alt" type="text/css"/>
 	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/hk-grotesk" type="text/css"/>
@@ -15,44 +16,50 @@
 <body>
 
 	<nav>
-		
-		<div class = 'head'>
-			<h1><a href="index.html">Home</a></h1>
+		<div>
+		<h1><a href="index.html">Home</a></h1>
 		</div>
-		
-		<div class = 'head'> 
-			<h1>Artists</h1>
-			<ul>
-				<li><a href="">Michie Nimsombun</a></li>
-				<li><a href="">Ben Swanson-Ralph</a></li>
+
+		<div class = 'artist'>
+			<h1 id = 'artists'>Artists</h1>
+			<ul class = 'artist-drop'>
+					<li><a href="aboutben.html">Ben Swanson-Ralph</a></li>
+					<li><a href="aboutmichie.html">Radit Michie Nimsombun</a>
+					</li>
 			</ul>
 		</div>
-		
-		
 	</nav>
 
 	<div class = 'main'>
-
+		
 		<div class = 'flex-container'>
 			
-			<img src="pics/index/camel.PNG" alt="camel">
-			<h2 class = 'name'>Michie</h2>
-			<h2><a href="">Gallery</a></h2>
-			<h2><a href="">About</a></h2>
-
-		</div>
-
-		<div class = 'flex-container'>
-			
-			<img src="pics/index/camel.PNG" alt="camel">
-			<h2 class = 'name'>Ben</h2>
-			<h2><a href="">Gallery</a></h2>
-			<h2><a href="">About</a></h2>
+			<img src="pics/ben.PNG" alt="picture of ben" id = 'ben'>
+			<h2 class = 'name' id = 'ben'>Ben</h2>
+			<h2><a href="galleryben.html">Gallery</a></h2>
+			<h2><a href="aboutben.html">About</a></h2>
 
 		</div>
 		
 
+		<div class = 'flex-container'>
+			
+			<img src="pics/michie.PNG" alt="camel" id = 'michie'>
+			<h2 class = 'name'>Michie</h2>
+			<h2><a href="gallerymichie.html">Gallery</a></h2>
+			<h2><a href="aboutmichie.html">About</a></h2>
+
+		</div>
+
+		
+
 	</div>
+
+	<footer>
+		<div class = 'foot'>
+			<p>2018</p>
+		</div>
+	</footer>
 	
 </body>
 
@@ -60,22 +67,19 @@
 
 (function($){
 
-	var tab = $('.head');
+	$(".artist").on('mouseenter', function(){
 
-	tab.on('mouseenter', function(){
+		// console.log('heard');
 
-		// console.log('sdad');
+		$('.artist-drop').slideToggle(300);
+	});
 
-		$(this).find('ul').slideToggle(200);
-	})
+	$(".artist").on('mouseleave', function(){
 
-	tab.on('mouseleave', function(){
+		// console.log('heard');
 
-		// console.log('sdad');
-
-		$(this).find('ul').slideToggle(200);
-	})
-
+		$('.artist-drop').slideToggle(300);
+	});
 
 
 

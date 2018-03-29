@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/aboutben.css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now-alt" type="text/css"/>
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/hk-grotesk" type="text/css"/>
+	
+	<title>Ben Swanson-Ralph</title>
+</head>
+
+<!-- jquery set up -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+<body>
+	<nav>
+		<div>
+		<h1><a href="index.html">Home</a></h1>
+		</div>
+
+		<div class = 'artist'>
+			<h1 id = 'artists'>Artists</h1>
+				<ul class = 'artist-drop'>
+					<li><a href="aboutben.html">Ben Swanson-Ralph</a></li>
+					<li><a href="aboutmichie.html">Radit Michie Nimsombun</a></li>
+				</ul>
+		</div>
+	</nav>
+
+
+	<div class = 'main'>
+		<h1>Ben Swanson-Ralph</h1>
+		<br>
+		<h2>Senior</h2>
+		<h2>Cinematography</h2>
+
+		<div class = 'container'>
+			<div class = 'image'>
+
+					<img src="pics/ben/ben.jpg" alt="pic of Ben">
+					<img id = 'img2' src="pics/ben/ben2.jpg" alt="another pic of ben">
+				
+			</div>
+
+			<div class = 'bio'>
+				<div>
+					<p class = 'bio-content'>Ben is a senior at the University of Michigan. Originally from East Lansing MI, he has worked as a content creator a number of producers, including Code &amp Theroy, NY and Burning Man. In addition, he has a number of independant projects.</p>
+					<br>
+					<p><a href="galleryben.html">~View Gallery~</a></p>
+					<br>
+					<p>Contact Info: benswansonralph@umich.edu</p>
+					<br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p>2018</p>
+	</footer>
+	
+</body>
+
+<script = 'text/javascript'>
+
+(function($){
+
+	$(".artist").on('mouseenter', function(){
+
+		// console.log('heard');
+
+		$('.artist-drop').slideToggle(300);
+	});
+
+	$(".artist").on('mouseleave', function(){
+
+		// console.log('heard');
+
+		$('.artist-drop').slideToggle(300);
+	});
+
+	// if ($(window).width() > 999){
+
+	// 	var iScrollPos = 0;
+
+	// 	$(window).scroll(function () {
+	//     var iCurScrollPos = $(this).scrollTop();
+	// 	    if (iCurScrollPos > iScrollPos){
+	// 	        $('nav').slideUp();
+	// 	        //Scrolling down
+	// 	    }; 
+		    
+	// 	    if (iCurScrollPos < iScrollPos){
+	// 	    	console.log('up')
+	// 	    	$('nav').slideDown();
+	// 	       //Scrolling Up
+	// 	    };
+	// 	    iScrollPos = iCurScrollPos;
+	// 	});
+	// };
+
+	// // makes fixed nav bar move around
+	// $(window).resize(function(){
+	// 	// console.log('resized');
+	// 	if ($(window).width() > 999){
+
+	// 	var iScrollPos = 0;
+
+	// 	$(window).scroll(function () {
+	//     var iCurScrollPos = $(this).scrollTop();
+	// 	    if (iCurScrollPos > iScrollPos){
+	// 	        $('nav').slideUp();
+	// 	        //Scrolling down
+	// 	    }; 
+		    
+	// 	    if (iCurScrollPos < iScrollPos){
+	// 	    	// console.log('up')
+	// 	    	$('nav').slideDown();
+	// 	       //Scrolling Up
+	// 	    };
+	// 	    iScrollPos = iCurScrollPos;
+	// 	});
+	// };
+
+	// });
+	
+
+
+
+}(jQuery));
+
+</script>
+
+</html>

@@ -1,0 +1,231 @@
+/*navigation bar*/
+body, html{
+	height: 100%;
+}
+nav{
+	background-color: darkred;
+	display: flex;
+	justify-content: space-between;
+	font-family: 'NowAltThin';
+}
+
+a{
+	text-decoration: none;
+	color:white;
+}
+
+
+nav h1, nav p{
+	display: inline-block;
+	padding: 1.5rem 2rem;
+	font-size: 1.5rem;
+}
+
+#artists{
+	display: none;
+}
+
+.artist-drop{
+	display: none;
+}
+
+.artist-drop > li > a{
+	color: white;
+}
+
+.bio-content{
+	padding: 0 1rem;
+	line-height: 1.5;
+}
+
+/*body*/
+.main{
+	margin-top: 10%;
+	text-align: center;
+	color: black;
+	font-family: 'NowAltRegular';
+	line-height: 1.5:;
+}
+
+.container{
+		margin-top: 5%;
+		}
+
+.main h1{
+	font-family: 'NowAltBold';
+	font-size: 1.5rem;
+}
+
+.main h2{
+	font-family: "NowAltMedium"
+}
+
+.main a{
+	color: darkred;
+}
+
+footer{
+	font-family: 'NowAltLight';
+	background-color: darkred;
+	color:white;
+	text-align: right;
+	padding: 1rem;
+	margin-top: 10%;
+}
+
+.image{
+	display: none;
+}
+
+#img2{
+	display: none;
+}
+
+@media only screen and (min-width: 650px){
+	/*navigation*/
+	nav{
+		text-align: center;
+		display: block;
+	}
+	
+	nav h1{
+		display: block;
+		margin: auto
+
+	}
+	
+	#artists{
+		display: block;
+		color:white;
+		cursor:pointer;	
+		border-top: 1px solid white;
+		width: 20%;
+	}
+
+	nav p{
+		display: none;
+	}
+
+	.artist-drop{
+		text-align: center;
+		padding-bottom: 2%;
+		color:white;
+	}
+
+	.artist-drop li{
+		margin-bottom: 2%; 
+	}
+
+	/*body*/
+
+	.container{
+
+		display: flex;
+	}
+
+	.container div{
+		display: inline-block;
+		width: 45%;
+	}
+
+		.image img{
+			max-width: 70%;
+		}
+
+		.bio div{
+			width: 100%;
+			/*text-align: left;*/
+		}
+
+		.bio-content{
+			text-align: left;
+			padding: 0;
+		}
+
+		.artist-drop > li > a{
+		color: white;
+		}
+
+}
+
+@media only screen and (min-width: 1000px){
+/*navigation*/
+	nav{
+		position: fixed;
+		z-index: 100;
+		display: flex;
+		justify-content:space-between;
+		width: 100%;
+		vertical-align: top;
+		top: 0;
+
+	}
+
+	nav div{
+		margin: auto;
+	}
+	
+	#artists{
+		border-top: 0;
+	}
+
+	.artist{
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	.artist-drop{
+		text-align: left;
+		position: absolute;
+		margin-left: 8rem;
+		margin-top: 1rem;
+		padding-left: 1rem;
+		list-style: circle;
+
+	}
+
+/*main body*/
+	#img2{
+		display: inline-block;
+	}
+	.main{
+		margin-top: 10%;
+
+	}
+
+	.container{
+		display: grid;
+		grid-template-rows: 3fr 1fr;
+		grid-template-columns:1fr;
+		justify-content:center;
+	}
+
+
+	.image{
+		grid-row: 1;
+		display: flex;
+		grid-column:1;
+		flex-flow: row nowrap;
+		margin: auto;
+		margin-top: -1%;
+
+	}
+
+		.image img{
+			display: inline-block;
+			max-width: 45%;
+			margin: auto;
+		}
+
+
+
+	.bio{
+		grid-column:1;
+		grid-row:2;
+		margin: auto;
+		margin-top: -2%;
+	}
+
+
+
+}
