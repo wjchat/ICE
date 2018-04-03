@@ -80,7 +80,7 @@ nav > div > h1 > a{
 
 /*scroll to top button*/
 
-#top{
+.top{
 
 	display: inline-block;
 	margin: auto;
@@ -94,12 +94,12 @@ nav > div > h1 > a{
 }
 
 
-.top{
+.top1{
 	position: absolute;
 	top: 2.8rem;
 }
 
-.nav1 > div > #top{
+.nav1 > div > .top{
 	color: white;
 	font-family: 'NowAltThin';
 	margin: auto;
