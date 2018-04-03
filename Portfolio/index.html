@@ -26,6 +26,7 @@
 					<li><a href="aboutben.html">Ben Swanson-Ralph</a></li>
 					<li><a href="aboutmichie.html">Radit Michie Nimsombun</a>
 					</li>
+					<li><a href="aboutbrie.html">Brielle Bonetti</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -34,20 +35,107 @@
 
 		<div class = 'flex-container'>
 			
-			<img src="pics/ben.PNG.png" alt="picture of ben" id = 'ben'>
-			<h2 class = 'name' id = 'ben'>Ben</h2>
-			<h2><a href="galleryben.html">Gallery</a></h2>
-			<h2><a href="aboutben.html">About</a></h2>
+			<div class = 'img'>
+					<img src="pics/ben.png" alt="picture of ben" id = 'ben'>
+				
+
+				<div class = 'info'>
+					<h2 class = 'name' id = 'ben'>Ben</h2>
+					<h2><a href="galleryben.html">Gallery</a></h2>
+					<h2><a href="aboutben.html">About</a></h2>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class = 'flex-container'>
+			
+			<div class = 'img brie'>
+					<img src="pics/brie.png" alt="picture of brie">
+				
+
+				<div class = 'info'>
+					<h2 class = 'name' id = 'brie'>Brielle</h2>
+					<h2><a href="gallerybrie.html">Gallery</a></h2>
+					<h2><a href="aboutbrie.html">About</a></h2>
+				</div>
+
+			</div>
 
 		</div>
 		
 
+		<div class = 'flex-container michie'>
+			
+			<div class = 'img'>
+				<img src="pics/michie.png" alt="Michie" id = 'michie'>
+			
+
+				<div class = 'info'>
+					<h2 class = 'name'>Michie</h2>
+					<h2><a href="gallerymichie.html">Gallery</a></h2>
+					<h2><a href="aboutmichie.html">About</a></h2>
+				</div>
+
+			</div>
+
+		</div>
+
+		
+
+	</div>
+
+	<!-- strictly for using jquery effects on the resize -->
+
+	<div class = 'main main2'>
+
 		<div class = 'flex-container'>
 			
-			<img src="pics/michie.PNG.png" alt="Michie" id = 'michie'>
-			<h2 class = 'name'>Michie</h2>
-			<h2><a href="gallerymichie.html">Gallery</a></h2>
-			<h2><a href="aboutmichie.html">About</a></h2>
+			<div class = 'img'>
+					<img src="pics/ben.png" alt="picture of ben" id = 'ben'>
+				
+
+				<div class = 'info'>
+					<h2 class = 'name' id = 'ben'>Ben</h2>
+					<h2><a href="galleryben.html">Gallery</a></h2>
+					<h2><a href="aboutben.html">About</a></h2>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class = 'flex-container'>
+			
+			<div class = 'img'>
+					<img src="pics/brie.png" alt="picture of brie">
+				
+
+				<div class = 'info'>
+					<h2 class = 'name' id = 'ben'>Brielle</h2>
+					<h2><a href="gallerybrie.html">Gallery</a></h2>
+					<h2><a href="aboutbrie.html">About</a></h2>
+				</div>
+
+			</div>
+
+		</div>
+		
+
+		<div class = 'flex-container michie'>
+			
+			<div class = 'img'>
+				<img src="pics/michie.png" alt="Michie" id = 'michie'>
+			
+
+				<div class = 'info'>
+					<h2 class = 'name'>Michie</h2>
+					<h2><a href="gallerymichie.html">Gallery</a></h2>
+					<h2><a href="aboutmichie.html">About</a></h2>
+				</div>
+
+			</div>
 
 		</div>
 
@@ -56,9 +144,7 @@
 	</div>
 
 	<footer>
-		<div class = 'foot'>
-			<p>2018</p>
-		</div>
+		<p>2018</p>
 	</footer>
 	
 </body>
@@ -80,6 +166,39 @@
 
 		$('.artist-drop').slideToggle(300);
 	});
+
+
+
+	// only operates on elemets in .main2
+	
+		$('.main2').find('.img').on('mouseenter', function(){
+
+			$(this).find('.info').fadeIn(200);
+			$(this).find('img').css('filter', 'grayscale(0%) blur(8px)');
+
+		});
+
+		$('.main2').find('.img').on('mouseleave', function(){
+
+			$(this).find('.info').fadeOut(0);
+			$(this).find('img').css('filter', 'grayscale(100%) blur(0px)');
+
+		});
+
+
+
+	
+	// $('img').on('mouseleave', function(){
+
+	// 	$(this).next().fadeOut();
+
+	// });
+
+	// $('.info').on('mouseleave', function(){
+	// 	$(this).fadeOut();
+	// })
+
+	
 
 
 

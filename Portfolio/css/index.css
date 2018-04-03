@@ -42,12 +42,12 @@ nav > div > h1 > a{
 h2{
 
 	font-family: 'NowAltThin';
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .name{
 	font-family: 'NowAltRegular';
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 a{
@@ -62,7 +62,12 @@ a{
   	justify-content: center;
   	align-items: center;
   	position: relative;
+  	text-align: center;
 
+}
+
+.main2{
+	display: none;
 }
 
 .flex-container{
@@ -73,35 +78,33 @@ a{
 	text-align: center;
 	margin: auto;
 	margin-bottom: 20%;
+	margin-top: 72px;
 
 }
+
 
 img{
-	max-width: 100%;
+	max-width:100%;
+	filter: grayscale(100%);
 }
+
+
+
 
 /*footer*/
 
 footer{
-	background-color:darkred;
 	font-family: 'NowAltThin';
-	position: absolute;
-	width: 100%;
-	padding: 0;
-
-}
-
-.foot{
-	padding-right: 5%;
+	background-color: darkred;
 	color:white;
 	text-align: right;
-	font-size: 2rem;
-
+	padding: 1rem;
+	margin-top: 0%;
 }
 
 
 /*medium screen view*/
-@media only screen and (min-width: 850px){
+@media only screen and (min-width: 650px){
 
 	/*navigation bar*/
 
@@ -126,8 +129,9 @@ footer{
 
 	.artist-drop{
 		text-align: center;
-		padding-bottom: 2%;
+		padding-bottom: 1%;
 		color:black;
+		background-color: darkred;
 	}
 
 	.artist-drop li{
@@ -135,36 +139,20 @@ footer{
 	}
 
 	/*body*/
-	
+
 	.main{
 		display: flex;
-		padding-top: 0%;
-		padding-bottom: 0%;
-	}
-	
-	#michie{
-		margin-top: 20%;
+		padding-top: 0;
 	}
 
-	#ben{
-		margin-top: 10.5%;
-	}
-	
-	.flex-container{
-
-		display:inline-block;
-		width: 100%;
-		margin-bottom: 0;
-
+	.main2{
+		display: none;
 	}
 
-	img{
-		max-width: 60%;
-		margin: auto;
-		vertical-align: center;
-		margin-bottom: -20%;
+	img {
+		max-width:80%;
+}
 
-	}
 
 
 }
@@ -197,10 +185,59 @@ footer{
 	.artist-drop{
 		text-align: left;
 		position: absolute;
-		margin-left: 8rem;
-		margin-top: 1rem;
+		margin-top: 4rem;
 		padding-left: 1rem;
 		list-style: circle;
 	}
+
+	/*body*/
+
+	.main{
+		padding-top: 4%;
+		display: none;
+	}
+
+	.main2{
+		display: flex;
+	}
+
+	.flex-container{
+		position: relative;
+	}
+	
+	.info{
+		position: absolute;
+		vertical-align: top;
+		width: 100%;
+		top: 70%;
+		display: none;
+	}
+
+	.info, .info a{
+		color:white;
+	}
+
+	.name, h2{
+		font-size: 3rem;
+	}
+
+	footer{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
+	footer p{
+		padding-right: 3%;
+	}
+
+	.main2, .main{
+		height: 200px;
+	}
+
+	.flex-container{
+		max-height: 60%;
+		margin-top: 25%;
+	}
+
 
 }

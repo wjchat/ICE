@@ -1,13 +1,14 @@
-/*navigation bar*/
-body, html{
-	height: 100%;
-}
+/*navigation*/
 nav{
 	background-color: darkred;
 	display: flex;
 	justify-content: space-between;
 	font-family: 'NowAltThin';
+	position: fixed;
+	width: 100%;
 }
+
+
 
 a{
 	text-decoration: none;
@@ -15,7 +16,7 @@ a{
 }
 
 
-nav h1, nav p{
+nav h1{
 	display: inline-block;
 	padding: 1.5rem 2rem;
 	font-size: 1.5rem;
@@ -29,65 +30,97 @@ nav h1, nav p{
 	display: none;
 }
 
+nav > div > h1 > a{
+	color: white;
+}
+
 .artist-drop > li > a{
 	color: white;
 }
 
-.bio-content{
-	padding: 0 1rem;
-	line-height: 1.5;
+.name{
+	position:absolute;
+	right: 0;
+	font-family: 'NowAltLight';
 }
 
-/*body*/
+.nav2{
+		display: none;
+}
+
+
+
+/*main body*/
 .main{
-	margin-top: 10%;
 	text-align: center;
-	color: black;
-	font-family: 'NowAltRegular';
-	line-height: 1.5:;
+	padding-top: 40%;
 }
 
-.container{
-		margin-top: 5%;
-		}
 
 .main h1{
-	font-family: 'NowAltBold';
-	font-size: 1.5rem;
-}
-
-.main h2{
-	font-family: "NowAltMedium"
-}
-
-.main a{
+	font-family: 'NowAltLight';
 	color: darkred;
+	font-size: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 10rem;
 }
 
+.gallery{
+	margin: auto;
+}
+
+.gallery img{
+	max-width: 90%;
+	margin-bottom: 8rem;
+}
+
+.gallery2{
+	display: none;
+}
+
+/*scroll to top button*/
+
+#top{
+
+	display: inline-block;
+	margin: auto;
+	font-family: 'NowAltLight';
+	color: darkred;
+	/*background-color: darkred;*/
+	/*border-radius: 50%;*/
+	padding: .5rem 1rem;
+	margin-bottom: 4rem;
+	cursor: pointer;
+}
+
+
+.top{
+	position: absolute;
+	top: 2.8rem;
+}
+
+.nav1 > div > #top{
+	color: white;
+	font-family: 'NowAltThin';
+	margin: auto;
+}
+
+
+
+/*footer, duh*/
 footer{
 	font-family: 'NowAltThin';
 	background-color: darkred;
 	color:white;
 	text-align: right;
 	padding: 1rem;
-	margin-top: 10%;
+	margin-top: 0%;
 }
 
-.image{
-	display: none;
-}
 
-#img2{
-	display: none;
-}
-
-#mobileimg{
-	max-width: 60%;
-	margin-bottom: 5%;
-}
-
-@media only screen and (min-width: 650px){
-	/*navigation*/
+@media only screen and (min-width: 650px) {
+	
+	/*navigation bar*/
 	nav{
 		text-align: center;
 		display: block;
@@ -107,10 +140,6 @@ footer{
 		width: 20%;
 	}
 
-	nav p{
-		display: none;
-	}
-
 	.artist-drop{
 		text-align: center;
 		padding-bottom: 1%;
@@ -122,44 +151,39 @@ footer{
 		margin-bottom: 2%; 
 	}
 
+
 	/*body*/
 
-	#mobileimg{
-		display: none;
+	.main{
+		padding-top: 30%;
 	}
-
-	.container{
-
+	.gallery{
 		display: flex;
 	}
 
-	.container div{
+	.container{
 		display: inline-block;
-		width: 45%;
 	}
 
-		.image img{
-			max-width: 70%;
-		}
+	.gallery img{
+		margin-bottom: 2rem;
+	}
 
-		.bio div{
-			width: 100%;
-			/*text-align: left;*/
-		}
+	.nav2{
+		display: block;
+	}
 
-		.bio-content{
-			text-align: left;
-			padding: 0;
-		}
+	.nav1{
+		display: none;
+	}
 
-		.artist-drop > li > a{
-		color: white;
-		}
-
+	
 }
 
 @media only screen and (min-width: 1000px){
-/*navigation*/
+
+	/*navigation*/
+
 	nav{
 		position: fixed;
 		z-index: 100;
@@ -169,6 +193,10 @@ footer{
 		vertical-align: top;
 		top: 0;
 
+	}
+
+	.nav2{
+		display: flex;
 	}
 
 	nav div{
@@ -192,54 +220,38 @@ footer{
 		list-style: circle;
 	}
 
-/*main body*/
-	#img2{
+	.name{
 		display: inline-block;
+		position:relative;
 	}
-	.main{
-		margin-top: 10%;
 
+/*main body changes*/
+
+	.gallery{
+		display: none;
+	}
+
+	.gallery2{
+		display: flex;
+		margin: auto;
+		justify-content:center;
 	}
 
 	.container{
-		display: grid;
-		grid-template-rows: 3fr 1fr;
-		grid-template-columns:1fr;
-		justify-content:center;
-		width: 100%;
 
+		max-width: 30%;
+		margin: 0 5px;
 	}
 
-
-	.image{
-		grid-row: 1;
-		display: flex;
-		grid-column:1;
-		flex-flow: row nowrap;
-		margin: auto;
-		margin-top: -1%;
-
+	.container img{
+		max-width: 100%;
+		margin-bottom: 10px;
 	}
 
-		.image img{
-			display: inline-block;
-			max-width: 45%;
-			margin: auto;
-		}
-
-
-
-	.bio{
-		grid-column:1;
-		grid-row:2;
-		margin: auto;
-		margin-top: -4%;
+	.main{
+		padding-top: 10%;
 	}
-	
-	#michie{
-		margin-top: -1%;
-		padding-top: 0%;
-	}
+
 
 
 }
