@@ -65,4 +65,8 @@
 		display: inline-block;
 		cursor: pointer;
 	}
+
+	#artists{
+		color: white;
+	}
 }
