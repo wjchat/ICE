@@ -42,7 +42,11 @@ nav > div > h1 > a{
 h2{
 
 	font-family: 'NowAltThin';
-	font-size: 2rem;
+	
+}
+
+h2 a{
+	font-size: 1.5rem;
 }
 
 .name{
