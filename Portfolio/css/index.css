@@ -1,63 +1,7 @@
 
 /*nav*/
 
-nav{
-	background-color: darkred;
-	display: flex;
-	justify-content: space-between;
-	font-family: 'NowAltThin';
-}
 
-a{
-	text-decoration: none;
-	color:white;
-}
-
-
-nav h1{
-	display: inline-block;
-	padding: 1.5rem 2rem;
-	font-size: 1.5rem;
-}
-
-#artists{
-	display: none;
-}
-
-.artist-drop{
-	display: none;
-}
-
-nav > div > h1 > a{
-	color: white;
-}
-
-.artist-drop > li > a{
-	color: white;
-}
-
-
-
-/*body*/
-h2{
-
-	font-family: 'NowAltThin';
-	
-}
-
-h2 a{
-	font-size: 1.5rem;
-}
-
-.name{
-	font-family: 'NowAltRegular';
-	font-size: 2rem;
-}
-
-a{
-	text-decoration: none;
-	color: black;
-}
 
 
 .main{
@@ -97,59 +41,12 @@ img{
 
 /*footer*/
 
-footer{
-	font-family: 'NowAltThin';
-	background-color: darkred;
-	color:white;
-	/*text-align: right;*/
-	padding: 1rem;
-	margin-top: 0%;
-	/*width: 95%;*/
-	display: flex;
-	justify-content: space-between;
-}
-
-
-#foot{
-	/*left: 0;*/
-	color: white;
-}
-
 
 /*medium screen view*/
 @media only screen and (min-width: 750px){
 
-	/*navigation bar*/
 
-	nav{
-		text-align: center;
-		display: block;
-	}
-	
-	nav h1{
-		display: block;
-		margin: auto
 
-	}
-	
-	#artists{
-		display: block;
-		color:white;
-		cursor:pointer;	
-		border-top: 1px solid white;
-		width: 20%;
-	}
-
-	.artist-drop{
-		text-align: center;
-		padding-bottom: 1%;
-		color:black;
-		background-color: darkred;
-	}
-
-	.artist-drop li{
-		margin-bottom: 2%; 
-	}
 
 	/*body*/
 
@@ -171,37 +68,7 @@ footer{
 }
 
 @media only screen and (min-width: 1000px){
-	nav{
-		position: fixed;
-		z-index: 100;
-		display: flex;
-		justify-content:space-between;
-		width: 100%;
-		vertical-align: top;
-		top: 0;
-
-	}
-
-	nav div{
-		margin: auto;
-	}
 	
-	#artists{
-		border-top: 0;
-	}
-
-	.artist{
-		display: flex;
-		flex-flow: row nowrap;
-	}
-
-	.artist-drop{
-		text-align: left;
-		position: absolute;
-		margin-top: 4rem;
-		padding-left: 1rem;
-		list-style: circle;
-	}
 
 	/*body*/
 
