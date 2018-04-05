@@ -68,11 +68,19 @@ footer{
 	font-family: 'NowAltThin';
 	background-color: darkred;
 	color:white;
-	text-align: right;
+	/*text-align: right;*/
 	padding: 1rem;
-	margin-top: 10%;
+	margin-top: 0%;
+	/*width: 95%;*/
+	display: flex;
+	justify-content: space-between;
 }
 
+
+#foot{
+	/*left: 0;*/
+	color: white;
+}
 .image{
 	display: none;
 }
@@ -84,6 +92,14 @@ footer{
 #mobileimg{
 	max-width: 60%;
 	margin-bottom: 5%;
+}
+
+#img3{
+	display: none;
+}
+
+.img3{
+	display: none;
 }
 
 @media only screen and (min-width: 650px){

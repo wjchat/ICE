@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/aboutben.css">
+	<link rel="stylesheet" href="css/about.css">
+
+	<!-- FONTS XD -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/now-alt" type="text/css"/>
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/hk-grotesk" type="text/css"/>
+
+	<title>About this site</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	
+</head>
+<body>
+
+	<nav>
+		<div>
+		<h1><a href="index.html">Home</a></h1>
+		</div>
+
+		<div class = 'artist'>
+			<h1 id = 'artists'>Artists</h1>
+				<ul class = 'artist-drop'>
+					<li><a href="aboutben.html">Ben Swanson-Ralph</a></li>
+					<li><a href="aboutmichie.html">Radit Michie Nimsombun</a></li>
+					<li><a href="aboutbrie.html">Brielle Bonetti</a></li>
+				</ul>
+		</div>
+	</nav>
+
+	<div class = 'main'>
+		<h1>About this site</h1>
+
+		<div class = 'container'>
+
+			<div>
+
+				<div class = 'image'>
+	
+						<img src="pics/KTP PIC.jpg" alt="">
+				
+
+						<img id = 'img3' src="pics/me.PNG" alt="a pic of me and a camel.">
+
+				</div>
+
+			</div>
+			<div class = 'bio-content'>
+				<p>Hi! My name is Will and I'm a junior in the University of Michigan's School of Information. This scalable &amp responsive website is my final project for web design and, since I already have a portfolio, I figured that I would make a site that acted as a show-case for a few of my more artistically inclined friends. On this site you can see samples of the work of Ben Swanson-Ralph, Brielle Bonetti, and Michie Nimsombun- all very talented in their respective concentrations. For more information about them, visit their about-pages. To see their work, check out their galleries. Enjoy the site!</p>
+
+				<br>
+				<p class = 'img3'>click to see a pic of me petting a camel</p>
+				
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+
+		<p id = 'foot'><a id = 'foot' href="thissite.html">about</a></p>
+
+		<p>copyright &copy 2018 | William Chatterson</p>
+		
+	</footer>
+
+	
+</body>
+
+<script = 'text/javascript'>
+
+(function($){
+
+	$('p.img3').on('click', function(){
+		var id = $(this).attr('class')
+		$('#' + id).toggle(200)
+	});
+
+	$(".artist").on('mouseenter', function(){
+
+		// console.log('heard');
+
+		$('.artist-drop').slideToggle(300);
+	});
+
+	$(".artist").on('mouseleave', function(){
+
+		// console.log('heard');
+
+		$('.artist-drop').slideToggle(300);
+	});
+
+
+
+	// only operates on elemets in .main2
+	
+		$('.main2').find('.img').on('mouseenter', function(){
+
+			$(this).find('.info').fadeIn(200);
+			$(this).find('img').css('filter', 'grayscale(0%) blur(8px)');
+
+		});
+
+		$('.main2').find('.img').on('mouseleave', function(){
+
+			$(this).find('.info').fadeOut(0);
+			$(this).find('img').css('filter', 'grayscale(100%) blur(0px)');
+
+		});
+
+
+
+	
+	// $('img').on('mouseleave', function(){
+
+	// 	$(this).next().fadeOut();
+
+	// });
+
+	// $('.info').on('mouseleave', function(){
+	// 	$(this).fadeOut();
+	// })
+
+	
+
+
+
+}(jQuery));
+
+</script>
+</html>

@@ -1,0 +1,68 @@
+@media only screen and (min-width: 650px){
+
+	.image img{
+		max-width: 115%;
+	}
+}
+
+
+
+@media only screen and (min-width: 1000px){
+
+
+	/*body*/
+
+	#mobileimg{
+		display: none;
+	}
+
+	.container{
+
+		display: flex;
+	}
+
+	.container div{
+		display: inline-block;
+		/*width: 45%;*/
+	}
+
+
+		.bio-content{
+			text-align: left;
+			padding-right: 5%;
+		}
+
+		.artist-drop > li > a{
+		color: white;
+		}
+
+	/*#img3{
+		display: inline-block;
+	}*/
+
+	.image img{
+		max-width: 40%;
+	}
+	
+	div > .image{
+		
+		width: 100%;
+		vertical-align: top;
+	}
+
+	.image > img {
+		display: inline-block;
+		/*max-width: 10%;*/
+		vertical-align: top;
+	}
+
+	img.img4{
+		display: none;
+	}
+
+	p.img3{
+		color:darkred;
+		display: inline-block;
+		cursor: pointer;
+	}
+}
