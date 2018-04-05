@@ -6,6 +6,7 @@ nav{
 	font-family: 'NowAltThin';
 	position: fixed;
 	width: 100%;
+	padding-bottom: .5rem;
 }
 
 
@@ -16,7 +17,7 @@ a{
 }
 
 
-nav h1{
+nav h2{
 	display: inline-block;
 	padding: 1.5rem 2rem;
 	font-size: 1.5rem;
@@ -80,7 +81,7 @@ nav > div > h1 > a{
 
 /*scroll to top button*/
 
-.top{
+h2.top{
 
 	display: inline-block;
 	margin: auto;
@@ -97,6 +98,8 @@ nav > div > h1 > a{
 .top1{
 	position: absolute;
 	top: 2.8rem;
+	cursor: pointer;
+	margin-bottom: 1rem;
 }
 
 .nav1 > div > .top{
@@ -133,15 +136,16 @@ footer{
 	nav{
 		text-align: center;
 		display: block;
+		padding-bottom: 0;
 	}
 	
-	nav h1{
+	nav h2{
 		display: block;
 		margin: auto
 
 	}
 	
-	#artists{
+	.artist h2.artists{
 		display: block;
 		color:white;
 		cursor:pointer;	
@@ -212,7 +216,7 @@ footer{
 		margin: auto;
 	}
 	
-	#artists{
+	.artist h2.artists{
 		border-top: 0;
 	}
 
