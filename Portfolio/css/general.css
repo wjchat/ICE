@@ -145,16 +145,19 @@ footer{
 		border-top: 0;
 	}
 
-	.artist{
+/*	.artist{
 		display: flex;
 		flex-flow: row nowrap;
 	}
-
+*/
 	.artist-drop{
 		text-align: left;
 		position: absolute;
-		margin-top: 4rem;
-		padding-left: 1rem;
+		/*margin-top: 4rem;
+		padding-left: 1rem;*/
 		list-style: circle;
+		/*-moz-padding-left:0;*/
+		list-style: none;
+		padding: 0 1rem;
 	}
 }

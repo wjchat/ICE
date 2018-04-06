@@ -53,15 +53,20 @@ h2.top{
 	padding: .5rem 1rem;
 	margin-bottom: 4rem;
 	cursor: pointer;
+	left:0;
+	font-size: 1rem;
+
 }
 
 
-.top1{
+.top1 .top{
 	position: absolute;
 	top: 2.8rem;
 	cursor: pointer;
 	margin-bottom: 1rem;
 	/*color: white;*/
+	bottom: 0;
+	
 }
 
 .nav1 > div > .top{
@@ -128,14 +133,13 @@ h2.top{
 
 
 
-
-
 	
 }
 
 @media only screen and (min-width: 1000px){
 
 	/*navigation*/
+	
 
 	
 
