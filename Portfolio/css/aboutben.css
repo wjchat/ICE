@@ -47,7 +47,11 @@
 	display: none;
 }
 
-@media only screen and (min-width: 650px){
+h2.artists{
+	display: none;
+}
+
+@media only screen and (min-width: 750px){
 	/*navigation*/
 
 	/*body*/
@@ -84,6 +88,15 @@
 		color: white;
 		}
 
+	h2.artists{
+		display: block;
+}
+	.main{
+		margin-top: 15%;
+		margin-bottom: 35%;
+	
+	}
+
 }
 
 @media only screen and (min-width: 1000px){
@@ -95,6 +108,7 @@
 	}
 	.main{
 		margin-top: 10%;
+		margin-bottom: 10%;
 
 	}
 
@@ -130,9 +144,11 @@
 		grid-column:1;
 		grid-row:2;
 		margin: auto;
-		margin-top: -4%;
 	}
 	
+	.bio-content{
+		margin-top: 5%;
+	}
 	#michie{
 		margin-top: -1%;
 		padding-top: 0%;

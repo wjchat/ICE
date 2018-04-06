@@ -1,8 +1,33 @@
-@media only screen and (min-width: 650px){
+/*footer{
+	position: absolute;
+	bottom: 0;
+	width: 96%;
+}*/
+
+footer p{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.main{
+	margin-top: 40%;
+	margin-bottom: 70%;
+}
+
+@media only screen and (min-width: 750px){
 
 	.image img{
 		max-width: 115%;
 	}
+
+	.main{
+		margin-top: 15%;
+		margin-bottom: 35%;
+	
+	}
+/*
+	h2.artists{
+		color: white;
+	}*/
 }
 
 
@@ -68,5 +93,9 @@
 
 	#artists{
 		color: white;
+	}
+
+	.main{
+		margin-bottom: 20%;
 	}
 }

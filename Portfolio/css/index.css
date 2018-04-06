@@ -52,7 +52,9 @@ img{
 
 	.main{
 		display: flex;
-		padding-top: 0;
+		margin-top: 10%;
+		margin-bottom: 30%;
+		
 	}
 
 	.main2{
@@ -79,6 +81,7 @@ img{
 
 	.main2{
 		display: flex;
+		margin-top: 0;
 	}
 
 	.flex-container{

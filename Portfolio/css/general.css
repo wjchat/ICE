@@ -41,8 +41,13 @@ h2{
 	
 }
 
+h2.artists{
+	display: none;
+}
+
 h2 a{
 	font-size: 1.5rem;
+
 }
 
 .name{
@@ -67,7 +72,15 @@ footer{
 	/*width: 95%;*/
 	display: flex;
 	justify-content: space-between;
+/*	position: absolute;
+	width: 100%;
+	bottom: 0;*/
 }
+
+/*footer p{
+	padding-left: 1rem;
+	padding-right: 1rem;
+}*/
 
 
 #foot{
@@ -88,12 +101,13 @@ footer{
 
 	}
 	
-	.artists{
+	h2.artists{
 		display: block;
 		color:white;
 		cursor:pointer;	
 		border-top: 1px solid white;
 		width: 20%;
+		margin:auto;
 	}
 
 	.artist-drop{
@@ -106,6 +120,8 @@ footer{
 	.artist-drop li{
 		margin-bottom: 2%; 
 	}
+
+
 
 }
 
@@ -125,7 +141,7 @@ footer{
 		margin: auto;
 	}
 	
-	.artists{
+	h2.artists{
 		border-top: 0;
 	}
 

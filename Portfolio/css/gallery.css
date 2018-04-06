@@ -5,6 +5,11 @@
 		display: none;
 }
 
+.nav1{
+	position: fixed;
+	width: 100%;
+	padding-bottom: +5%;
+}
 
 
 /*main body*/
@@ -42,7 +47,7 @@ h2.top{
 	display: inline-block;
 	margin: auto;
 	font-family: 'NowAltLight';
-	color: darkred;
+	color: white;
 	/*background-color: darkred;*/
 	/*border-radius: 50%;*/
 	padding: .5rem 1rem;
@@ -56,6 +61,7 @@ h2.top{
 	top: 2.8rem;
 	cursor: pointer;
 	margin-bottom: 1rem;
+	/*color: white;*/
 }
 
 .nav1 > div > .top{
@@ -64,15 +70,35 @@ h2.top{
 	margin: auto;
 }
 
+/*.parallax-container {
+   	background: transparent;
+   	padding: 4rem;
+}*/
+
+.main h1{
+	color: white;
+}
 
 
 
 
 
-@media only screen and (min-width: 650px) {
+
+@media only screen and (min-width: 750px) {
 	
 	/*navigation bar*/
-	
+
+	.nav1{
+		display: none;
+		z-index: -400;
+		background-color: white;
+	}
+
+	.nav2{
+		display: block;
+	}
+
+
 
 	/*body*/
 
@@ -91,17 +117,16 @@ h2.top{
 		margin-bottom: 2rem;
 	}
 
-	.nav2{
-		display: block;
-	}
-
-	.nav1{
-		display: none;
-	}
-
 	.top1{
 		display: none;
 	}
+
+	h2.artists{
+		display: block;
+		border-top: 0;
+	}
+
+
 
 
 
