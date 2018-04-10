@@ -1,0 +1,43 @@
+
+body{
+	text-align: center;
+	font-family: helvetica;
+	color: white;
+	background-color: black;
+}
+
+fieldset{
+	text-align: center;
+	margin: auto;
+/*	color:black;
+	background-color: white;*/
+}
+
+.head{
+	margin: auto;
+}
+
+h4{
+	font-weight:bold;
+	font-size: 2rem;
+	font-family:garamond;
+	/*background-color: grey;*/
+}
+
+legend{
+	font-weight: bold;
+	cursor:pointer;
+	font-family: garamond;
+	font-size: 1.5rem;
+}
+
+.form{
+	display: none;
+	background-color: white;
+	color: black;
+	padding: 1rem 0;
+}
+
+.button{
+	cursor:	pointer;
+}
