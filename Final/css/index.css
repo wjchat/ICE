@@ -1,0 +1,38 @@
+body{
+	background-image: url('../images/christmas-dark.png');
+}
+
+
+header{
+	/*padding: .3% 0;*/
+}
+
+.main{
+	display: flex;
+	width: 100%;
+}
+
+.image{
+	
+	padding: 5%;
+	border: solid 5px blue;
+	width: 40%;
+	margin: 1% auto;
+	text-align: center;
+}
+
+h1{
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+	
+}
+
+img{
+	height: 100%;
+	margin: auto;
+}
+
+footer{
+	/*padding: .3% 0;*/
+}

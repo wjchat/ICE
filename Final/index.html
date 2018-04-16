@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Final Exam</title>
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/index.css">
+
+	<!-- jQuery setup -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>William Chatterson</h1>
+	</header>
+
+	<div class = 'main'>
+
+		<div class = 'image exam'>
+			<img src="images/examPic.JPG" alt="exam pic">
+		</div>
+
+		<div class = 'image'>
+			<img src="images/UMSI-logo.jpg" alt="exam pic">
+		</div>
+		
+	</div>
+
+	<footer>
+		<button class = 'hide'>Hide Image</button>
+		<button class = 'show'>Show Image</button>
+	</footer>	
+
+	<script>
+
+	(function($){
+		var $image = $('.exam');
+
+		$('.hide').on('click', function(){
+			$image.hide();
+		});
+
+		$('.show').on('click', function(){
+			$image.show();
+		});
+
+
+
+	}(jQuery));
+
+	</script>
+
+
+</body>
+</html>
